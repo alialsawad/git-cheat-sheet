@@ -403,3 +403,55 @@ $ git push <remote> --delete <branch>
 ```
 
 <hr>
+
+## Undo
+
+##### Discard all local changes in your working directory:
+
+```
+$ git reset --hard HEAD
+```
+
+##### Undo the last `git add`:
+
+```
+$ git reset HEAD
+```
+
+##### Discard local changes in a specific file:
+
+```
+$ git checkout HEAD <file>
+```
+
+##### Revert a commit (by producing a new commit with contrary changes):
+
+```
+$ git revert <commit>
+```
+
+##### Reset your HEAD pointer to a previous commit and discard all changes since then:
+
+```
+$ git reset --hard <commit>
+```
+
+##### Reset your HEAD pointer to a remote branch current state.
+
+```
+$ git reset --hard <remote/branch> e.g., upstream/master, origin/my-feature
+```
+
+##### Reset your HEAD pointer to a previous commit and preserve all changes as unstaged changes:
+
+```
+$ git reset <commit>
+```
+
+##### Remove files that were accidentally committed before adding .gitignore:
+
+```
+$ git rm -r --cached .
+$ git add .
+$ git commit -m "remove xyz file"
+```
