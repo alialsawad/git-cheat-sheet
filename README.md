@@ -143,3 +143,33 @@ GIT_COMMITTER_DATE="date" git commit --amend
 ```
 $ git commit --amend --date="date"
 ```
+
+##### Move uncommitted changes from current branch to some other branch:<br>
+
+```
+$ git stash
+$ git checkout branch2
+$ git stash pop
+```
+
+##### Restore stashed changes back to current branch:
+
+```
+$ git stash apply
+```
+
+#### Restore particular stash back to current branch:
+
+- _{stash_number}_ can be obtained from `git stash list`
+
+```
+$ git stash apply stash@{stash_number}
+```
+
+##### Remove the last set of stashed changes:
+
+```
+$ git stash drop
+```
+
+<hr>
