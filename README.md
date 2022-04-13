@@ -173,3 +173,65 @@ $ git stash drop
 ```
 
 <hr>
+
+## Search
+
+##### A text search on all files in the directory:
+
+```
+$ git grep "Hello"
+```
+
+##### In any version of a text search:
+
+```
+$ git grep "Hello"
+```
+
+<hr>
+
+## Commit History
+
+##### Show all commits, starting with newest (it'll show the hash, author information, date of commit and title of the commit):
+
+```
+$ git log
+```
+
+##### Show all the commits(it'll show just the commit hash and the commit message):
+
+```
+$ git log --oneline
+```
+
+##### Show all commits of a specific user:
+
+```
+$ git log --author="username"
+```
+
+##### Show changes over time for a specific file:
+
+```
+$ git log -p <file>
+```
+
+##### Who changed, what and when in &lt;file&gt;:
+
+```
+$ git blame <file>
+```
+
+##### Show Reference log:
+
+```
+$ git reflog show
+```
+
+##### Delete Reference log:
+
+```
+$ git reflog delete
+```
+
+<hr>
