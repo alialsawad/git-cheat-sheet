@@ -235,3 +235,59 @@ $ git reflog delete
 ```
 
 <hr>
+
+## Move / Rename
+
+##### Rename a file:
+
+Rename Index.txt to Index.html
+
+```
+$ git mv Index.txt Index.html
+```
+
+<hr>
+
+## Branches & Tags
+
+##### List all local branches:
+
+```
+$ git branch
+```
+
+#### List local/remote branches
+
+```
+$ git branch -a
+```
+
+##### List all remote branches:
+
+```
+$ git branch -r
+```
+
+##### Switch HEAD branch:
+
+```
+$ git checkout <branch>
+```
+
+##### Checkout single file from different branch
+
+```
+$ git checkout <branch> -- <filename>
+```
+
+##### Create and switch new branch:
+
+```
+$ git checkout -b <branch>
+```
+
+##### Switch to the previous branch:
+
+```
+$ git checkout -
+```
