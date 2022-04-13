@@ -291,3 +291,115 @@ $ git checkout -b <branch>
 ```
 $ git checkout -
 ```
+
+##### Create a new branch from an exiting branch and switch to new branch:
+
+```
+$ git checkout -b <new_branch> <existing_branch>
+```
+
+#### Checkout and create a new branch from existing commit
+
+```
+$ git checkout <commit-hash> -b <new_branch_name>
+```
+
+##### Create a new branch based on your current HEAD:
+
+```
+$ git branch <new-branch>
+```
+
+##### Create a new tracking branch based on a remote branch:
+
+```
+$ git branch --track <new-branch> <remote-branch>
+```
+
+##### Delete a local branch:
+
+```
+$ git branch -d <branch>
+```
+
+##### Rename current branch to new branch name
+
+```
+$ git branch -m <new_branch_name>
+```
+
+##### Force delete a local branch:
+
+<em><sub>You will lose unmerged changes!</sub></em>
+
+```
+$ git branch -D <branch>
+```
+
+<hr>
+
+## Update & Publish
+
+##### List all activities:
+
+```
+$ git remote -v
+```
+
+##### Show information about a remote:
+
+```
+$ git remote show <remote>
+```
+
+##### Add new remote repository, named &lt;remote&gt;:
+
+```
+$ git remote add <remote> <url>
+```
+
+##### Rename a remote repository, from &lt;remote&gt; to &lt;new_remote&gt;:
+
+```
+$ git remote rename <remote> <new_remote>
+```
+
+##### Remove a remote:
+
+<em><sub>Note: git remote rm does not delete the remote repository from the server. It simply removes the remote and its references from your local repository.</sub></em>
+
+```
+$ git remote rm <remote>
+```
+
+##### Get all changes from HEAD to local repository:
+
+```
+$ git pull origin master
+```
+
+##### Get all changes from HEAD to local repository without a merge:
+
+```
+$ git pull --rebase <remote> <branch>
+```
+
+##### Publish local changes on a remote:
+
+```
+$ git push <remote> <branch>
+```
+
+##### Delete a branch on the remote:
+
+```
+$ git push <remote> :<branch>
+```
+
+OR
+
+```
+$ git push <remote> --delete <branch>
+```
+
+<hr>
