@@ -415,3 +415,9 @@ $ git rm -r --cached .
 $ git add .
 $ git commit -m "remove xyz file"
 ```
+
+##### Undo  git init
+
+```
+rm -rf .git
+```
